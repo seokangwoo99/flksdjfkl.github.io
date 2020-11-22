@@ -1,0 +1,164 @@
+/** SITE CONFIG**/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+    box-sizing: border-box;
+    font-family: 'Pangolin', cursive;
+    font-weight: 400;
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+/**Reusable code**/
+
+h2 {
+    font-size: 5rem;
+    color:white;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    word-spacing: .4rem;
+    letter-spacing: .4rem;
+}
+
+h2::after {
+    display: block;
+    height: .2rem;
+    background-color: #e67e22;
+    content: "";
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    border: 1px solid #fff;
+    padding: 1rem 3rem;
+    border-radius: 20rem;
+    display: inline-block;
+    transition: background-color .3s, color .3s;
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.ig {
+    border: 2px solid rgb(223, 97, 255);
+    padding:.5rem 1rem;
+}
+
+.ig:hover {
+    background-color: rgb(223,97,255);
+}
+
+/** HEADER**/
+
+
+/**NAV**/
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 4rem;
+}
+
+.main-nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.main-nav li {
+    display:inline-block;
+    margin-right: 2rem;
+}
+
+.main-nav li a:visited,
+.main-nav li a:link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+
+/** HERO**/
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/charwide.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 92vh, 0 100%);
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #fff;
+    color: #000;
+}
+
+/**Showcase**/
+
+.row_sec {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .4rem;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 .4rem;
+  }
+  
+  .column img {
+    margin-top: .8rem;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 80rem) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 60rem) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

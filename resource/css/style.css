@@ -1,0 +1,117 @@
+/** SITE CONFIG**/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+    box-sizing: border-box;
+    font-family: 'Pangolin', cursive;
+    font-weight: 400;
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+/**Reusable code**/
+
+h1 {
+    font-size: 5.5rem;
+    color:white;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;word-spacing: 4px;
+    letter-spacing: 4px;
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    border: 1px solid #fff;
+    padding: 1rem 3rem;
+    border-radius: 20rem;
+    display: inline-block;
+    transition: background-color .3s, color .3s;
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.ig {
+    border: 2px solid rgb(223, 97, 255);
+    padding:.5rem 1rem;
+}
+
+.ig:hover {
+    background-color: rgb(223,97,255);
+}
+
+/** HEADER**/
+
+/**NAV**/
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 4rem;
+}
+
+.main-nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.main-nav li {
+    display:inline-block;
+    margin-right: 2rem;
+}
+
+.main-nav li a:visited,
+.main-nav li a:link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+
+/** HERO**/
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/theforest.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
